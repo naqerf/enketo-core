@@ -69,7 +69,7 @@ define( [ 'enketo-js/Widget', 'Modernizr', 'jquery', 'enketo-widget/date/bootstr
             this._setFocusHandler( $fakeDateI );
             this._setResetHandler( $fakeDateI );
 
-            console.log( 'setting picker with settings:', settings );
+            //console.log( 'setting picker with settings:', settings );
 
             $fakeDateI.datepicker( {
                 format: settings.format,

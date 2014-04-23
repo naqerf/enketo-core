@@ -1369,7 +1369,7 @@ define( [ 'enketo-js/FormModel', 'enketo-js/widgets', 'jquery', 'enketo-js/plugi
 
                     $question.append( $constraintMsg );
                     if ( !hasRequiredMsg && isRequired ) {
-                        $constraintMsg.after( '<span class="or-required-msg active" lang="">This field is required</span>' );
+                        $constraintMsg.after( '<span class="or-required-msg active" lang="">Este campo es obligatorio</span>' );
                     }
                 } );
 
@@ -1839,7 +1839,7 @@ define( [ 'enketo-js/FormModel', 'enketo-js/widgets', 'jquery', 'enketo-js/plugi
                         loudErrorShown = $question.hasClass( 'invalid-required' ) || $question.hasClass( 'invalid-constraint' ),
                         insideTable = ( $( this ).closest( '.or-appearance-list-nolabel' ).length > 0 ),
                         $reqSubtle = $question.find( '.required-subtle' ),
-                        reqSubtle = $( '<span class="required-subtle" style="color: transparent;">Required</span>' );
+                        reqSubtle = $( '<span class="required-subtle" style="color: transparent;"></span>' );
 
                     if ( event.type === 'focusin' || event.type === "fakefocus" ) {
                         $question.addClass( 'focus' );
